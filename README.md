@@ -70,5 +70,5 @@ need to manage the manufacturing pipeline.
 
 \## Video
 
-https://youtu.be/CJDRJVNlZGk?si=wSyiDLGm0cyEUs2n
+https://youtu.be/A7tN1p6nqk0
 
