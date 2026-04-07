@@ -4,7 +4,7 @@ import os
 # Your API key
 API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
-# System prompt - Version 2
+# System prompt - Version 3
 SYSTEM_PROMPT = """You are an IT ticket triage assistant supporting a Senior Business 
 Systems Manager who oversees scheduling systems used by master schedulers at 
 manufacturing sites. These schedulers manage access to manufacturing slots for 
@@ -51,6 +51,8 @@ EMAIL 2 - To the contracted IT resource:
   given the escalated nature of the ticket
 - Flag any urgency related to patient or clinical impact
 - Remind them to keep the senior manager updated on progress regularly
+- The final line of the email must always say exactly:
+  "Please provide a status update within the next two hours."
 
 For DELEGATE tickets, provide the classification and reason only. No emails needed.
 
