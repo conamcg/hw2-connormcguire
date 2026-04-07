@@ -1,0 +1,365 @@
+--- Ticket 1 ---
+INPUT: My password expired and I can't log into the scheduling system. Can someone reset it?
+
+OUTPUT:
+CLASSIFICATION: DELEGATE
+
+REASON: This is a standard password reset request, which is a routine account maintenance task that contracted IT support staff are equipped to handle independently.
+
+============================================================
+
+--- Ticket 2 ---
+INPUT: I need my scheduling system access restored. I was out on leave for 3 weeks and my account appears to have been locked.
+
+OUTPUT:
+CLASSIFICATION: DELEGATE
+
+REASON: This is a standard account lockout issue resulting from an extended absence. It can be handled through routine account reactivation procedures by contracted IT support staff without requiring senior management involvement.
+
+============================================================
+
+--- Ticket 3 ---
+INPUT: Can someone add my new team member Sarah Johnson to the scheduling system? She starts Monday and will need standard scheduler access for the Memphis site.
+
+OUTPUT:
+CLASSIFICATION: DELEGATE
+
+REASON: This is a standard user provisioning request for a new employee requiring routine access setup. It involves no system issues, multi-user impacts, or business configuration requirements — contracted IT support can handle this through normal onboarding procedures.
+
+============================================================
+
+--- Ticket 4 ---
+INPUT: The scheduling system is running slowly on my computer today. Other applications seem fine. Can someone take a look?
+
+OUTPUT:
+CLASSIFICATION: DELEGATE
+
+REASON: This appears to be a local device or browser performance issue affecting only one user, with no indication of a system-wide problem or impact on scheduling functionality. Standard IT support can troubleshoot local performance issues through typical diagnostics (cache clearing, resource monitoring, device restart, etc.).
+
+============================================================
+
+--- Ticket 5 ---
+INPUT: I accidentally deleted a manufacturing slot entry I created this morning. Is there any way to recover it?
+
+OUTPUT:
+CLASSIFICATION: DELEGATE
+
+REASON: This is a routine data recovery issue resulting from user error. The user needs to recover a single entry they deleted, which falls within standard IT support capabilities and doesn't indicate a system bug or broader issue affecting operations.
+
+============================================================
+
+--- Ticket 6 ---
+INPUT: The scheduling system is showing available manufacturing slots that were already confirmed and assigned last week. Multiple schedulers across the Atlanta and Memphis sites are seeing the same issue. We're concerned slots are being double-booked.
+
+OUTPUT:
+CLASSIFICATION: ESCALATE
+
+REASON: This ticket involves a potential system bug affecting multiple users across multiple sites with direct impact on manufacturing slot allocation and patient treatment timelines. Data integrity concerns around double-booking require immediate senior management review.
+
+EMAIL 1 - TO BUSINESS USER:
+Subject: Escalation of Manufacturing Slot Display Issue – Immediate Senior Review
+
+Dear Scheduling Team,
+
+Thank you for reporting the issue with available manufacturing slots appearing incorrectly across the Atlanta and Memphis sites. We understand how critical accurate slot allocation is to your operations and patient care timelines.
+
+We have received your ticket and are escalating this matter immediately to our Senior Business Systems Manager for close oversight and investigation. Given the potential for double-booking and the multi-site impact you've identified, this requires senior-level attention to our scheduling system's data integrity.
+
+Our contracted IT support team will be leading the technical investigation and will be your primary point of contact for updates on progress and resolution. We will prioritize this issue accordingly.
+
+Please don't hesitate to reach out to our Senior Business Systems Manager directly if you have any questions, concerns, or additional details that would help us resolve this quickly.
+
+Thank you for your diligence in catching and reporting this issue.
+
+Best regards,
+IT Support Team
+
+EMAIL 2 - TO IT RESOURCE:
+Subject: ESCALATED – Multi-Site Manufacturing Slot Double-Booking Issue
+
+This ticket has been escalated for senior management oversight.
+
+**Issue Summary:**
+The scheduling system is displaying previously confirmed and assigned manufacturing slots as available across multiple sites (Atlanta and Memphis). Multiple schedulers are reporting the same problem, creating a risk of double-booking production slots for made-to-order cell therapies.
+
+**Urgency:** HIGH – Direct patient care impact. This affects treatment timeline integrity and slot allocation accuracy.
+
+**Your Role:**
+You will lead the technical investigation and resolution of this issue. Please prioritize identifying whether this is a display bug, data sync issue, or database integrity problem.
+
+**Reporting:**
+The Senior Business Systems Manager will be providing close oversight on this ticket given its escalated status. Please provide regular progress updates and keep them informed of any findings, particularly around potential data corruption or recent system changes that may have triggered this issue.
+
+Please begin investigation immediately and confirm receipt of this escalation.
+
+============================================================
+
+--- Ticket 7 ---
+INPUT: We are onboarding a new manufacturing site in Denver and need the scheduling system configured to reflect our site-specific slot capacity rules and approval workflow. The standard setup does not match how our made-to-order process works.
+
+OUTPUT:
+CLASSIFICATION: ESCALATE
+
+REASON: This request requires deep business system knowledge and custom configuration to align the scheduling system with site-specific operational requirements for a new manufacturing location. Improper configuration could disrupt the made-to-order process and impact patient treatment timelines.
+
+---
+
+EMAIL 1 - TO BUSINESS USER:
+
+**Subject: Denver Site Scheduling System Configuration – Escalated to Senior Management**
+
+Dear Scheduling Team,
+
+Thank you for submitting your ticket regarding the scheduling system configuration for the Denver manufacturing site. We understand how critical it is to have the system properly aligned with your site-specific slot capacity rules and approval workflow before operations begin.
+
+Given the complexity of customizing the scheduling system to match your made-to-order process, we are escalating this request to our Senior Business Systems Manager for direct oversight. He has the deep operational expertise needed to ensure the configuration accurately reflects your requirements and integrates seamlessly with your existing workflows.
+
+Our contracted IT support team will be your primary point of contact for updates and will work closely with senior management to move this forward. You're welcome to reach out directly to the Senior Business Systems Manager if you have any questions, concerns, or need to discuss timeline requirements for the Denver site launch.
+
+We appreciate your patience and will prioritize getting this configured correctly for your team.
+
+Best regards,  
+IT Support Team
+
+---
+
+EMAIL 2 - TO IT RESOURCE:
+
+**Subject: ESCALATED – Denver Site Scheduling System Configuration (Custom Setup Required)**
+
+This ticket has been escalated for senior management oversight.
+
+**Summary:**  
+The Denver manufacturing site requires custom configuration of the scheduling system to support site-specific slot capacity rules and approval workflows. The standard configuration does not align with their made-to-order cell therapy process.
+
+**Key Points:**
+- This is a new site onboarding with custom operational requirements
+- Configuration errors could disrupt scheduling and impact patient treatment timelines
+- Senior management will provide close oversight due to the business-critical nature
+- You will lead the technical investigation and implementation working with the business user and senior manager
+
+**Next Steps:**  
+Please coordinate with the business user to document their specific slot capacity rules and approval workflows, then work with the Senior Business Systems Manager to design the appropriate system configuration. Keep senior management updated on progress regularly, and flag any timeline constraints related to the site launch.
+
+============================================================
+
+--- Ticket 8 ---
+INPUT: After this morning's system update, none of our schedulers at the Houston site can see the Q2 slot allocation data. The slots are still showing in the admin view but not in the scheduler-facing interface. We have patients waiting on treatment confirmations.
+
+OUTPUT:
+CLASSIFICATION: ESCALATE
+
+REASON: This is a post-update system failure affecting multiple users at a site with direct patient clinical impact. The discrepancy between admin and scheduler views suggests a potential bug in the update that requires urgent investigation and may indicate data integrity concerns.
+
+---
+
+EMAIL 1 - TO BUSINESS USER:
+
+Subject: Your Escalation Request – Q2 Slot Visibility Issue at Houston Site
+
+Body:
+
+Thank you for reporting this issue. We understand how critical slot allocation visibility is to your patient treatment confirmations, and we're treating this with the urgency it deserves.
+
+Your ticket regarding the Q2 slot allocation data not displaying in the scheduler interface after this morning's update has been escalated to our Senior Business Systems Manager for immediate attention and oversight. Our contracted IT support team is leading the investigation and will be working closely with senior management to diagnose and resolve this issue as quickly as possible.
+
+You'll receive regular updates from our IT support team as we work through this. Please don't hesitate to reach out to them directly with any additional details or questions about the resolution timeline. If you have broader concerns or need to escalate further, you're welcome to contact the Senior Business Systems Manager directly.
+
+We appreciate your patience as we work to restore full system functionality.
+
+Best regards,
+IT Support Team
+
+---
+
+EMAIL 2 - TO IT RESOURCE:
+
+Subject: ESCALATED – Post-Update Data Visibility Issue, Houston Site (Patient Impact)
+
+Body:
+
+This ticket requires immediate investigation and senior management oversight.
+
+**Issue Summary:**
+Following this morning's system update, all schedulers at the Houston site have lost visibility of Q2 slot allocation data in their user-facing interface. The data remains visible in the admin view, indicating a potential display logic or permission bug introduced in the update rather than data loss. Patients are currently waiting on treatment confirmations, making this time-critical.
+
+**Your Role:**
+You are leading the technical investigation and resolution. Please prioritize this ticket immediately and focus on:
+- Comparing the update changes to the scheduler interface code
+- Verifying data integrity in the Q2 allocation tables
+- Testing the scheduler view access controls post-update
+- Documenting findings for root cause analysis
+
+**Senior Management Oversight:**
+The Senior Business Systems Manager will be monitoring this closely given the patient-critical impact and the post-update nature of the failure. Please provide status updates at least every 2 hours and notify management immediately if you identify a systemic issue or data integrity concern.
+
+Please confirm receipt and your estimated start time.
+
+============================================================
+
+--- Ticket 9 ---
+INPUT: The slot confirmation emails that go out to our clinical partners stopped sending yesterday. We haven't changed anything on our end. A few partners have already called asking for their confirmations.
+
+OUTPUT:
+CLASSIFICATION: ESCALATE
+
+REASON: This is a system-wide failure affecting critical clinical communication with external partners, directly impacting patient treatment timelines. The sudden stoppage without any configuration changes suggests a potential system bug or infrastructure issue requiring senior management investigation.
+
+---
+
+EMAIL 1 - TO BUSINESS USER:
+
+Subject: Slot Confirmation Email Issue - Escalated to Senior Management
+
+Body:
+
+Thank you for reporting the slot confirmation email failure. We understand how critical this communication is to your clinical partners and patient care timelines, and we're treating this with appropriate urgency.
+
+Your ticket has been escalated to our senior management team for immediate investigation. Given the patient-critical nature of this system, the Senior Business Systems Manager will be providing close oversight on this issue.
+
+Our contracted IT support team is leading the technical investigation and will be your primary point of contact for updates and resolution progress. We will work to identify the root cause and restore email delivery as quickly as possible.
+
+Please don't hesitate to reach out to the Senior Business Systems Manager directly if you have any questions, concerns, or additional details that might help us resolve this faster.
+
+We appreciate your patience and partnership.
+
+---
+
+EMAIL 2 - TO IT RESOURCE:
+
+Subject: ESCALATED - Slot Confirmation Email System Failure (Clinical Impact)
+
+Body:
+
+**Priority: High - Clinical Impact**
+
+The automated slot confirmation emails that send to external clinical partners have stopped sending as of yesterday. The business user reports no changes were made on their end, indicating this may be a system or infrastructure issue.
+
+Multiple clinical partners have already contacted the user requesting their confirmations. This directly impacts patient treatment scheduling and is time-critical.
+
+**Your responsibilities:**
+- Lead the investigation into the email system failure (check mail queue, system logs, service status, recent deployments/updates)
+- Identify whether this is isolated to the scheduling system or affects broader email infrastructure
+- Develop and implement a resolution plan
+
+The Senior Business Systems Manager will be providing close oversight on this ticket given its escalated nature and clinical implications. Please provide status updates at least daily, or more frequently if significant progress is made.
+
+Please confirm receipt and provide an initial assessment within 2 hours if possible.
+
+============================================================
+
+--- Ticket 10 ---
+INPUT: One of our schedulers left the company last week. Can you remove her access from the scheduling system? She had admin-level permissions including the ability to override slot capacity limits.
+
+OUTPUT:
+CLASSIFICATION: ESCALATE
+
+REASON: This involves offboarding a user with admin-level permissions and the ability to override critical system controls. Given the patient-critical nature of the scheduling system, the senior manager needs to ensure proper access removal procedures are followed and verify that no unauthorized changes were made before her access is terminated.
+
+---
+
+EMAIL 1 - TO BUSINESS USER:
+
+Subject: Offboarding Access Removal – Escalated to Senior Management
+
+Dear [User],
+
+Thank you for submitting this access removal request. We've received your ticket and recognize the importance of promptly removing administrative access, particularly given the critical nature of your scheduling system.
+
+This ticket has been escalated to our Senior Business Systems Manager for close oversight to ensure that the offboarding process is handled thoroughly and securely. Our contracted IT support team will be leading the investigation and coordinated removal process, and they will be your main point of contact for updates and status.
+
+Given the admin-level permissions involved, we want to ensure all proper procedures are followed. You should expect to hear from our IT team shortly with next steps and a timeline for completion.
+
+Please don't hesitate to reach out to our Senior Business Systems Manager directly if you have any questions, concerns, or additional details about this former employee's access that we should be aware of.
+
+Best regards,
+IT Support Team
+
+---
+
+EMAIL 2 - TO IT RESOURCE:
+
+Subject: ESCALATED – Admin Access Removal for Departed Employee
+
+Body:
+
+This ticket requires your immediate attention and has been escalated to senior management oversight.
+
+**Issue Summary:**
+A scheduler who separated from the company last week held admin-level permissions in the scheduling system, including the ability to override slot capacity limits. Her access needs to be removed promptly.
+
+**Critical Context:**
+This is a patient-critical system managing access to manufacturing slots for made-to-order cell therapies. Admin-level access with override capabilities represents a significant system risk.
+
+**Your Role:**
+You are leading the investigation and execution of the access removal. As part of this process, please:
+- Verify all systems where this user had admin access
+- Check access logs for any recent activity or changes made by this user
+- Confirm complete removal of her credentials and permissions
+- Identify any system changes made during her tenure that may require review
+
+**Senior Manager Oversight:**
+The Senior Business Systems Manager will be providing close oversight given the escalated nature and the critical role of this system. Please keep them updated on progress regularly, including confirmation once access has been fully removed and any findings from the access log review.
+
+Please prioritize this and provide a status update within 24 hours.
+
+Best regards,
+IT Triage
+
+============================================================
+
+--- Ticket 11 ---
+INPUT: The scheduling system approved a slot for patient therapy case #CTX-2024-8847 but our clinical team is saying the approval never came through on their end. The system log shows the approval was sent but the clinical portal shows no record of it. This is the third time this has happened this month with different patients.
+
+OUTPUT:
+CLASSIFICATION: ESCALATE
+
+REASON: This ticket involves a potential system bug affecting data integrity and patient treatment timelines across multiple cases. The recurring nature (third occurrence this month) suggests a systemic problem in the approval notification workflow between the scheduling system and clinical portal that requires immediate investigation and could impact patient care delivery.
+
+---
+
+EMAIL 1 - TO BUSINESS USER:
+
+Subject: Escalation of Scheduling System Approval Issue – Immediate Senior Review
+
+Dear Scheduling Team,
+
+Thank you for bringing this critical issue to our attention. We've received your ticket regarding the discrepancy between system-logged approvals and records appearing in the clinical portal, and we understand the urgency given the patient-critical nature of this work.
+
+This issue has been escalated immediately to our Senior Business Systems Manager for close oversight and investigation. Given that this is the third occurrence this month, we recognize this may indicate a systemic problem that requires deep technical and business knowledge to resolve properly.
+
+You remain our primary point of contact for all updates on this ticket. Our contracted IT team will be leading the investigation and will keep you informed of progress and next steps. If you have any additional context about the affected cases, timing patterns, or other observations that might help us diagnose this issue, please don't hesitate to reach out.
+
+You're also welcome to contact the Senior Business Systems Manager directly if you have questions, concerns, or need to discuss the business impact this is creating.
+
+We appreciate your diligence in flagging this issue—it's critical to getting it resolved quickly.
+
+Best regards,
+IT Support Team
+
+---
+
+EMAIL 2 - TO IT RESOURCE:
+
+Subject: ESCALATED – Recurring System Bug: Scheduling Approvals Not Syncing to Clinical Portal
+
+This ticket requires immediate investigation and senior management oversight.
+
+**Issue Summary:**
+The scheduling system is logging approval confirmations for therapy case slots, but these approvals are not appearing in the clinical portal where clinical teams need to see them. This has now occurred three times this month with different patients, suggesting a systemic workflow or data sync problem rather than isolated user error.
+
+**Business Impact:**
+This directly affects patient treatment timelines. Clinical partners cannot proceed with therapy preparation when they don't see approvals, creating delays and potential care disruption.
+
+**Your Role:**
+You are leading the technical investigation and resolution. The Senior Business Systems Manager will be providing close oversight given the escalated nature and patient impact. Please prioritize this ticket and provide regular updates on:
+- Root cause findings
+- Affected cases and timeline patterns
+- Proposed remediation
+- Expected resolution timeline
+
+Please reach out to the senior manager immediately if you identify any data integrity issues or if this requires system configuration changes beyond standard troubleshooting.
+
+Contact the business user directly if you need additional details about the three affected cases.
+
+============================================================
